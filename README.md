@@ -46,4 +46,4 @@ ORDER BY 1, 2;
 ## Dataset Source
 
 Data from Our World in Data (OWID) — the COVID-19 global dataset.
-https://ourworldindata.org/covid-data
+[https://ourworldindata.org/covid-data](https://ourworldindata.org/covid-deaths)
