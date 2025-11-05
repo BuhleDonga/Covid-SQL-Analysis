@@ -1,38 +1,49 @@
 # Covid SQL Analysis
 
 **SQL Data Exploration and Analysis of the COVID-19 Dataset**
-Inspired by AlexTheAnalyst’s tutorial, with personalized analysis and formatting enhancements.
+*Inspired by AlexTheAnalyst’s tutorial, with personalized analysis and formatting enhancements.*
 
-# Description
+---
 
-This project explores global COVID-19 data using SQL to uncover insights about infection trends, death rates, and vaccination progress.
+## Description
+
+This project utilizes SQL to analyze global COVID-19 data, uncovering insights into infection trends, mortality rates, and vaccination progress.
 It focuses on transforming raw data into actionable insights using real-world data analysis techniques.
 
-# Tools Used
+---
 
-SQLite (via DB Browser)
+### Tools Used
 
-SQL for data cleaning, aggregation, and exploration
+- **SQLite** (via DB Browser)
 
-Excel for initial data loading and structure review
+- **SQL** for data cleaning, aggregation, and exploration
 
-Key Queries and Insights
+- **Excel** for initial data loading and structure review
 
-Total cases vs. total deaths per country
+---
 
-Infection rate compared to population
+## Key Queries and Insights
 
-Global death percentage trends
+1. Total cases vs. total deaths per country
 
-Vaccination rollout analysis using window functions
+2. Infection rate compared to population
 
-Example Query
+3. Global death percentage trends
+
+4. Vaccination rollout analysis using window functions
+
+---
+
+## Example Query
+
 SELECT location, date, total_cases, total_deaths, 
        (total_deaths * 1.0 / total_cases) * 100 AS DeathPercentage
 FROM CovidDeaths
 ORDER BY 1, 2;
 
-Dataset Source
+---
+
+## Dataset Source
 
 Data from Our World in Data (OWID) — the COVID-19 global dataset.
 https://ourworldindata.org/covid-data
